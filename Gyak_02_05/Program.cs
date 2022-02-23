@@ -14,8 +14,8 @@ namespace MyNamespace4
     {
         public static void Main(string[] args)
         {
-            
-            
+
+
             MyClass4 my = new MyClass4();
             double n = my.readDouble1es10Kozott();
             string[] tomb = new string[Convert.ToInt32(n)];
@@ -23,17 +23,52 @@ namespace MyNamespace4
             {
                 tomb[i] = my.readValidNames();
             }
-            foreach (var item in tomb)
-            {
-                System.Console.WriteLine(item);
-            }
-            
+
+            System.Console.WriteLine(my.azonosNevek(tomb));
+
 
         }
-        string readValidNames(){
-            string nam= "";
+
+        int azonosNevek(string[] tomb)
+        {
+            int n = tomb.Length;
+            int temp;
+
+            string[] tomb2 = new string[n];
+
+            Array.Copy(tomb, tomb2, n);
+
+            int numberOfAzonosNevek = 0;
+            for (var x = 0; x < n; x++)
+            {
+                temp = 0;
+
+                for (var y = 0; y < n; y++)
+                {
+                    if (tomb[x].Equals(tomb2[y]) && x <= y)
+                    {
+                        temp++;
+                        tomb2[y] = "";
+                    }
+
+
+                }
+                if (temp > 1)
+                {
+                    numberOfAzonosNevek += temp;
+                    temp = 0;
+                }
+
+
+            }
+            return numberOfAzonosNevek;
+        }
+
+        string readValidNames()
+        {
+            string nam = "";
             Console.WriteLine("Adj meg egy nevet");
-            FIXME: // itt van valami hiba , de mukodik
+        FIXME: // itt van valami hiba , de mukodik
             while (!nameCheck(nam = Console.ReadLine()))
             {
                 Console.WriteLine("Nem jo nev, probald ujra");
