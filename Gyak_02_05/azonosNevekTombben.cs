@@ -25,8 +25,45 @@ namespace MyNamespace4
             }
 
             System.Console.WriteLine(my.azonosNevek(tomb));
+            System.Console.WriteLine(my.azonosNevekKezdobetu(tomb));
 
 
+
+        }
+
+         int azonosNevekKezdobetu(string[] tomb)
+        {
+            int n = tomb.Length;
+            int temp;
+
+            string[] tomb2 = new string[n];
+
+            Array.Copy(tomb, tomb2, n);
+
+            int numberOfAzonosNevek = 0;
+            for (var x = 0; x < n; x++)
+            {
+                temp = 0;
+
+                for (var y = 0; y < n; y++)
+                {
+                    if (tomb2[y] != "" && tomb[x].Substring(0,1) == tomb2[y].Substring(0,1) && x <= y)
+                    {
+                        temp++;
+                        tomb2[y] = "";
+                    }
+
+
+                }
+                if (temp > 1)
+                {
+                    numberOfAzonosNevek += temp;
+                    temp = 0;
+                }
+
+
+            }
+            return numberOfAzonosNevek;
         }
 
         int azonosNevek(string[] tomb)
