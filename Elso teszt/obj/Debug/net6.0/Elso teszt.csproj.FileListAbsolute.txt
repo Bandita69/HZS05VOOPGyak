@@ -1,0 +1,15 @@
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\bin\Debug\net6.0\Elso teszt.exe
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\bin\Debug\net6.0\Elso teszt.deps.json
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\bin\Debug\net6.0\Elso teszt.runtimeconfig.json
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\bin\Debug\net6.0\Elso teszt.dll
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\bin\Debug\net6.0\ref\Elso teszt.dll
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\bin\Debug\net6.0\Elso teszt.pdb
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\Elso teszt.csproj.AssemblyReference.cache
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\Elso teszt.GeneratedMSBuildEditorConfig.editorconfig
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\Elso teszt.AssemblyInfoInputs.cache
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\Elso teszt.AssemblyInfo.cs
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\Elso teszt.csproj.CoreCompileInputs.cache
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\Elso teszt.dll
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\ref\Elso teszt.dll
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\Elso teszt.pdb
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Elso teszt\obj\Debug\net6.0\Elso teszt.genruntimeconfig.cache

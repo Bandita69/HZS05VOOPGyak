@@ -1,0 +1,4 @@
+How to run this shat:
+Terminal- >
+dotnet new console
+dotnet run
