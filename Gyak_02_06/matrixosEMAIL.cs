@@ -12,23 +12,54 @@ namespace name6
 
             int numberOfNames = 5;
             MyClass6 my = new MyClass6();
-            string[,] matrix = new string[5,3];
+            string[,] matrix = new string[5, 3];
 
 
             for (var i = 0; i < numberOfNames; i++)
             {
-                matrix[i,0] = my.readValidNames();
-                System.Console.WriteLine("email1");
-                matrix[i,1] = my.readValidNames();
-                System.Console.WriteLine("email2");
-                matrix[i,2] = my.readValidNames();
-               
+                matrix[i, 0] = my.readValidNames();
+                matrix[i, 1] = my.readValidEmails();
+                if (matrix[i, 1] != "")
+                {
+                    matrix[i, 2] = my.readValidEmails();
+                }
 
-            } // TODO: Elképzelés az hogy a tömbon végig megy ahol van email a 3. oszlopban, osszeadja. de itt inkább az email beolvasás a feladat
+
+
+            }
+            var tobbEmail = 0;
+            for (var i = 0; i < numberOfNames; i++)
+            {
+
+                if (!(String.IsNullOrEmpty(matrix[i, 2])))
+                {
+                    tobbEmail++;
+
+                }
+
+            }
+            System.Console.WriteLine("ennyinek van tobb: " + tobbEmail);
 
 
 
         }
+
+        string readValidEmails()
+        {
+            string nam = "";
+            Console.WriteLine("Adj meg egy emailt");
+        FIXME: // itt van valami hiba , de mukodik
+            while (!Validator.EmailIsValid(nam = Console.ReadLine()))
+            {
+                if (nam == "") { return nam; }
+                Console.WriteLine("Nem jo email, probald ujra");
+            }
+            return nam;
+
+
+
+        }
+
 
 
         string readValidNames()
@@ -60,4 +91,25 @@ namespace name6
 
     }
 
+    public static class Validator
+    {
+
+        static Regex ValidEmailRegex = CreateValidEmailRegex();
+
+        private static Regex CreateValidEmailRegex()
+        {
+            string validEmailPattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
+                + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)"
+                + @"@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$";
+
+            return new Regex(validEmailPattern, RegexOptions.IgnoreCase);
+        }
+
+        internal static bool EmailIsValid(string emailAddress)
+        {
+            bool isValid = ValidEmailRegex.IsMatch(emailAddress);
+
+            return isValid;
+        }
+    }
 }
