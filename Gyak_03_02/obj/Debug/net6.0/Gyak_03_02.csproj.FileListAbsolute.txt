@@ -1,0 +1,15 @@
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\bin\Debug\net6.0\Gyak_03_02.exe
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\bin\Debug\net6.0\Gyak_03_02.deps.json
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\bin\Debug\net6.0\Gyak_03_02.runtimeconfig.json
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\bin\Debug\net6.0\Gyak_03_02.dll
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\bin\Debug\net6.0\ref\Gyak_03_02.dll
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\bin\Debug\net6.0\Gyak_03_02.pdb
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\Gyak_03_02.csproj.AssemblyReference.cache
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\Gyak_03_02.GeneratedMSBuildEditorConfig.editorconfig
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\Gyak_03_02.AssemblyInfoInputs.cache
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\Gyak_03_02.AssemblyInfo.cs
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\Gyak_03_02.csproj.CoreCompileInputs.cache
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\Gyak_03_02.dll
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\ref\Gyak_03_02.dll
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\Gyak_03_02.pdb
+G:\EGYETEM\2021-22-2\oop\Gyakorlas\Gyak_03_02\obj\Debug\net6.0\Gyak_03_02.genruntimeconfig.cache
