@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "g:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\Gyak_01.csproj": {}
+    "G:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\Gyak_01.csproj": {}
   },
   "projects": {
-    "g:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\Gyak_01.csproj": {
+    "G:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\Gyak_01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\Gyak_01.csproj",
+        "projectUniqueName": "G:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\Gyak_01.csproj",
         "projectName": "Gyak_01",
-        "projectPath": "g:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\Gyak_01.csproj",
+        "projectPath": "G:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\Gyak_01.csproj",
         "packagesPath": "C:\\Users\\Xanax\\.nuget\\packages\\",
-        "outputPath": "g:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\obj\\",
+        "outputPath": "G:\\EGYETEM\\2021-22-2\\oop\\Gyakorlas\\Gyak_01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Xanax\\AppData\\Roaming\\NuGet\\NuGet.Config"
