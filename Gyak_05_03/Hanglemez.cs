@@ -14,7 +14,7 @@ namespace otodikGyakHanglemez
         string cím;
         int hossz;
 
-        public Hanglemez(){}
+        public Hanglemez() { }
         public Hanglemez(string előadó, string cím, int hossz)
         {
             Előadó = előadó;
@@ -89,21 +89,15 @@ namespace otodikGyakHanglemez
         {
             MyClass my = new MyClass();
             int n = my.readInt();
-            Hanglemez[] tomb = new Hanglemez[n];
-
-            for (var i = 0; i < n; i++)
-
-            {
-                Hanglemez tomb[i] = new Hanglemez();
-                
-            }
+            var tomb = new Hanglemez[n];
             int leghosszabb = 0;
-            
+
 
             for (var i = 0; i < n; i++)
             {
-                
-                
+
+                //EZ ITT FONTOS
+                tomb[i] = new Hanglemez();
                 tomb[i].Előadó = my.readValidNames();
                 tomb[i].Cím = my.readValidNames();
                 tomb[i].Hossz = my.readInt();
@@ -111,17 +105,24 @@ namespace otodikGyakHanglemez
                 System.Console.WriteLine("ezt ertettem" + tomb[i]);
             }
             int x;
+            int index = 0;
+            System.Console.WriteLine("Eloado keresese-> ");
+            string addottNev = my.readValidNames();
             for (x = 0; x < n; x++)
             {
                 if (tomb[x].Hossz > leghosszabb)
                 {
                     leghosszabb = tomb[x].Hossz;
-
+                    index = x;
+                }
+                if (tomb[x].Előadó.Equals(addottNev,StringComparison.OrdinalIgnoreCase))
+                {
+                    System.Console.WriteLine(tomb[x]);
+                    
                 }
 
-
             }
-            System.Console.WriteLine(tomb[x]);
+            System.Console.WriteLine("\nez a leghosszabb: " + tomb[index]);
 
         }
 
