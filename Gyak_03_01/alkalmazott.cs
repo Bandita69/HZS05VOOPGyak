@@ -16,6 +16,12 @@ namespace MyNamespace31
             this.name = name;
             this.salary = salary;
         }
+        public Alkalmazott(string nam) : this(nam,25000)
+        {
+
+
+        }
+
 
         public string getName()
         {
@@ -155,7 +161,7 @@ namespace MyNamespace31
             int counter = 0;
             double sum = 0;
             double atlag = 0;
-            
+
             foreach (var item in alkalmazotts)
             {
                 if (item.getSalary() > maximum)
@@ -180,7 +186,7 @@ namespace MyNamespace31
             System.Console.WriteLine("Ennyinek esik 1000 és 2000 köze: " + counter);
             System.Console.WriteLine("Ennyi az atlag: " + atlag);
 
-            //ADO JON
+            
 
 
         }

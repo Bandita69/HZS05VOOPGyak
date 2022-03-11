@@ -16,6 +16,15 @@ namespace konyvek
         private int megjelenes;
         private int ar;
 
+
+
+
+
+
+
+
+
+
         public String getCim()
         {
             return this.cim;
@@ -64,11 +73,22 @@ namespace konyvek
             this.megjelenes = megjelenes;
             this.ar = ar;
         }
+
+        public Konyv(string cim, string szerzo) : this(cim, szerzo, DateTime.Now.Year, 2500)
+        {
+
+
+
+        }
+
+
+
+
         public override String ToString() { return "Könyv :" + cim + " " + szerzo + " " + megjelenes + " " + ar; }
 
         public void szazalekosAremelkedes(int szazalek)
         {
-            setAr(ar + ar* szazalek / 100);
+            setAr(ar + ar * szazalek / 100);
 
 
         }
@@ -85,10 +105,12 @@ namespace konyvek
 
         public static void Main(string[] args)
         {
-            Konyv k = new Konyv("Nudlikevero Harmaik Bovitett kiadas", "Gordonka", 1800, 1000);
+            Konyv k = new Konyv("Nudlikevero Harmaik Bovitett kiadas", "Gordonka");
             System.Console.WriteLine(k);
             k.szazalekosAremelkedes(10);
             System.Console.WriteLine(k);
+
+
 
         }
     }
