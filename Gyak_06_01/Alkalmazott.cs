@@ -10,6 +10,7 @@ inicializálja az adattagokat. A másiknak csak a nevet és a kort kell megadni,
 10000*kor. A második konstruktor használja fel az elsőt.
  Legyen metódusa, amely visszaadja, hogy hány éve van még nyugdíjig */
 
+
 namespace AlkalmazottName
 {
     public class Alkalmazott
@@ -26,7 +27,7 @@ namespace AlkalmazottName
         public Alkalmazott(string név, DateTime birthday, int fizetés)
 
         {
-            
+
             this.név = név;
             this.fizetés = fizetés;
             this.birthday = birthday;
@@ -107,6 +108,16 @@ namespace AlkalmazottName
 
         public override String ToString() { return "Alkalmazott :" + név + " " + kor + " " + fizetés + " " + HányÉvedVanHátra(); }
 
+        public String NévÉsNap()
+        {
+
+            Type type = typeof(honapok);
+            object what = Enum.ToObject(type, birthday.Month);
+
+            return "Alkalmazott :" + név + " " + birthday.Year + " " + what + " " + birthday.Day;
+
+        }
+
         public Alkalmazott NekiTöbbVanMégHátra(Alkalmazott egyik, Alkalmazott másik)
         {
 
@@ -156,6 +167,8 @@ namespace AlkalmazottName
             tomb[1] = new Alkalmazott("Foncy Henderson", masik, 4000);
             tomb[2] = new Alkalmazott("Scut Listenbee", harmadik, 34556);
             tomb[3] = new Alkalmazott("Arnold Scharerberg", 1999, "szeptember", 10);
+            System.Console.WriteLine("\n neves honappal: " + tomb[3].NévÉsNap() + "\n");
+
 
 
 
