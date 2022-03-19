@@ -26,11 +26,12 @@ namespace AlkalmazottName
         public Alkalmazott(string név, DateTime birthday, int fizetés)
 
         {
-            DateTime currentDate = DateTime.Now;
-            int currentYear = currentDate.Year;
+            
             this.név = név;
             this.fizetés = fizetés;
             this.birthday = birthday;
+            DateTime currentDate = DateTime.Now;
+            int currentYear = currentDate.Year;
             this.kor = currentYear - birthday.Year;
 
         }
@@ -54,7 +55,7 @@ namespace AlkalmazottName
         public enum honapok
         {
 
-            január,
+            január = 1,
             február,
             március,
             április,
@@ -66,14 +67,25 @@ namespace AlkalmazottName
             október,
             november,
             december
-            
+
         }
 
         public Alkalmazott(string név, int év, string hónap, int nap)
         {
 
             this.név = név;
-            this.birthday = new DateTime(év,(Enum.Parse(typeof(honapok),hónap)).ToString(),nap);
+            honapok choice;
+            int value = 1;
+            if (Enum.TryParse(hónap, out choice))
+            {
+                value = (int)choice;
+
+
+            }
+            this.birthday = new DateTime(év, value, nap);
+            DateTime currentDate = DateTime.Now;
+            int currentYear = currentDate.Year;
+            this.kor = currentYear - birthday.Year;
             this.fizetés = kor * 10000;
         }
 
@@ -124,11 +136,16 @@ namespace AlkalmazottName
 
     }
     public class AlkMain
+
+
+
     {
+
+
         public static void Main(string[] args)
         {
 
-            int n = 3;
+            int n = 4;
             var tomb = new Alkalmazott[n];
 
             DateTime egyik = new DateTime(1960, 10, 10);
@@ -138,6 +155,9 @@ namespace AlkalmazottName
             tomb[0] = new Alkalmazott("Pitchfork Ben Boogerbottom", egyik, 10000);
             tomb[1] = new Alkalmazott("Foncy Henderson", masik, 4000);
             tomb[2] = new Alkalmazott("Scut Listenbee", harmadik, 34556);
+            tomb[3] = new Alkalmazott("Arnold Scharerberg", 1999, "szeptember", 10);
+
+
 
             foreach (var item in tomb)
             {
