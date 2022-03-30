@@ -182,10 +182,29 @@ namespace konyvek
                     Count = playerGroup.Count(),
                 };
 
-                foreach (var item in playersPerTeam)
-                {
-                    System.Console.WriteLine(item);
-                }
+            foreach (var item in playersPerTeam)
+            {
+                System.Console.WriteLine(item);
+            }
+
+
+
+
+            //Masik feladat
+
+
+            var stilusos = new masikNevter.KonyvStilus("Komolyan!", "Mihály Kelemen", 500, "scifi");
+
+            System.Console.WriteLine(stilusos);
+            /* 
+
+            ISMÉTLÉS ha nagyon unatkoznál
+            csinálj ellenorzott beolvasaáásal 10 db konyvet mint a hanlemeznél
+            a) Számolja meg hányféle különböző stílusú könyv szerepel a tömbben.
+            b) Írja ki a "scifi" stílusú könyvek adatait.
+            c) Számítsa ki a "scifi" stílusú könyvek átlagárát.
+            A sztringek egyezésének vizsgálatára használja a string osztály metódusát:
+            public bool Equals (string value, StringComparison comparisonType) */
 
 
 
@@ -210,6 +229,29 @@ namespace konyvek
 
         }
     }
+
+
+}
+namespace masikNevter
+{
+    public class KonyvStilus : konyvek.Konyv
+    {
+        string szöveg;
+
+        public KonyvStilus(string cim, string szerzo, int page, string szöveg) : base(cim, szerzo, DateTime.Now.Year, 2500, page)
+        {
+            this.szöveg = szöveg;
+
+
+        }
+
+        public override String ToString() { return base.ToString() + " stilus: " + szöveg; }
+
+
+
+
+    }
+
 
 
 }
