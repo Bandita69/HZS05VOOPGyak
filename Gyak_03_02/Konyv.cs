@@ -195,7 +195,11 @@ namespace konyvek
 
             var stilusos = new masikNevter.KonyvStilus("Komolyan!", "Mihály Kelemen", 500, "scifi");
 
+
             System.Console.WriteLine(stilusos);
+
+
+
             /* 
 
             ISMÉTLÉS ha nagyon unatkoznál
@@ -205,6 +209,26 @@ namespace konyvek
             c) Számítsa ki a "scifi" stílusú könyvek átlagárát.
             A sztringek egyezésének vizsgálatára használja a string osztály metódusát:
             public bool Equals (string value, StringComparison comparisonType) */
+
+            var tomb2 = new masikNevter.KonyvStilus[3];
+
+            tomb2[0] = new masikNevter.KonyvStilus("One Puncs Man", "Will Smith", 5, "Történelem");
+            tomb2[1] = new masikNevter.KonyvStilus("Tomlos Sajtból Van a Hold", "Elek Zoltán", 1200, "scifi");
+            tomb2[2] = new masikNevter.KonyvStilus("Harmadikk Világhábrú", "Lakatos Putyin", 33, "scifi");
+            double atlagar = 0;
+            foreach (var item in tomb2)
+            {
+                if (item.getSzöVeg().Equals("scifi", StringComparison.OrdinalIgnoreCase))
+                {
+                        System.Console.WriteLine(item);
+                        atlagar += item.getAr();
+
+                }
+
+            }
+            atlagar /= 3;
+            System.Console.WriteLine(atlagar);
+
 
 
 
@@ -238,12 +262,24 @@ namespace masikNevter
     {
         string szöveg;
 
+        public string getSzöVeg()
+        {
+            return this.szöveg;
+        }
+
+        public void setSzöVeg(string szöveg)
+        {
+            this.szöveg = szöveg;
+        }
+
+
         public KonyvStilus(string cim, string szerzo, int page, string szöveg) : base(cim, szerzo, DateTime.Now.Year, 2500, page)
         {
             this.szöveg = szöveg;
 
 
         }
+
 
         public override String ToString() { return base.ToString() + " stilus: " + szöveg; }
 
