@@ -137,16 +137,19 @@ namespace konyvek
 
             System.Console.WriteLine("Másik feladatok: \n");
 
+
             var tomb = new Konyv[3];
-
-
-
-
-
-
             tomb[0] = new Konyv("Nudlikevero Harmaik Bovitett kiadas", "Gordonka", 100);
             tomb[1] = new Konyv("Magyar Cinke fajok gondozása", "Gálik Tamás", 151);
             tomb[2] = new Konyv("Hogyan hagyjuk abba az izgulást és szeressük az oroszokat", "Gordonka", 120);
+
+            var tomb2 = new masikNevter.KonyvStilus[3];
+
+            tomb2[0] = new masikNevter.KonyvStilus("One Puncs Man", "Will Smith", 5, "Történelem");
+            tomb2[1] = new masikNevter.KonyvStilus("Tomlos Sajtból Van a Hold", "Elek Zoltán", 1200, "scifi");
+            tomb2[2] = new masikNevter.KonyvStilus("Harmadikk Világhábrú", "Lakatos Putyin", 33, "scifi");
+
+
             Konyv legho = tomb[0];
             for (var i = 0; i < 3; i++)
             {
@@ -210,11 +213,7 @@ namespace konyvek
             A sztringek egyezésének vizsgálatára használja a string osztály metódusát:
             public bool Equals (string value, StringComparison comparisonType) */
 
-            var tomb2 = new masikNevter.KonyvStilus[3];
 
-            tomb2[0] = new masikNevter.KonyvStilus("One Puncs Man", "Will Smith", 5, "Történelem");
-            tomb2[1] = new masikNevter.KonyvStilus("Tomlos Sajtból Van a Hold", "Elek Zoltán", 1200, "scifi");
-            tomb2[2] = new masikNevter.KonyvStilus("Harmadikk Világhábrú", "Lakatos Putyin", 33, "scifi");
             double atlagar = 0;
             foreach (var item in tomb2)
             {
